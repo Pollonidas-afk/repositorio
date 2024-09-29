@@ -1,0 +1,116 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('../images/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #ffffff 33.33%, #007acc 33.33%, #007acc 66.67%, #ffcc00 66.67%, #ffcc00 100%);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ffa500; /* Change color on hover */
+}
+
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #007acc;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px;  /* Max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: inline-block; /* Ensure image behaves correctly */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+form button:hover {
+    background: #005999;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-top: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack navigation items on smaller screens */
+        margin: 10px 0;
+    }
+
+    article img {
+        width: 100%; /* Full width on smaller screens */
+        max-width: none; /* Remove max-width restriction */
+    }
+}
